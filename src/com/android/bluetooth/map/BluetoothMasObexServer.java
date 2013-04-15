@@ -1157,7 +1157,6 @@ public class BluetoothMasObexServer extends ServerRequestHandler {
             }
             return sendFolderListingBody(op, mAppIf.folderListing(masAppParams.get()));
         } else {
-            op.noEndofBody();
             return pushHeader(op, reply);
         }
     }
